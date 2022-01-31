@@ -14,3 +14,69 @@ html{
     font-size: 62.5%;
     background-color: var(--lightGray);
 }
+body{
+    display:flex;
+    flex-direction: column;
+}
+main{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-content: center;
+    place-items: center;
+}
+main .qr-card{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, min-content);
+    justify-items: center;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    gap: 25px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -25px hsla(220, 15%, 55%, 0.2);
+}
+main .qr-card img{
+    width: 90%;
+    height: auto;
+    margin: 15px 0 0 0;
+    border-radius: 10px;
+}
+main .qr-card h1{
+    width: 85%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--DarkBlue);
+}
+main .qr-card p{
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--GrayishBlue);
+    margin: 0 0 35px 0;
+}
+
+
+@media (min-width: 768px){
+        /* ANIMATION */
+    main .qr-card{
+        animation-name: slider;
+        animation-duration: 1s;
+    }
+    @keyframes slider {
+        0%{
+            transform: translateY(100px);
+            transition-timing-function: ease-in;
+            opacity: 0%;
+        }
+        100%{
+            transform: translateY(0px); 
+            opacity: 100%;
+        }
+    }
+}
+
