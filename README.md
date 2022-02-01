@@ -1,4 +1,4 @@
-## Frontend Mentor - Stats preview card component
+## Frontend Mentor - QR Component
 
 ### Screenshot
 ![version-desk](design/design.png)
