@@ -60,6 +60,25 @@ main .qr-card p{
     margin: 0 0 35px 0;
 }
 
+/* FOOTER */
+footer .attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--DarkBlue);
+}
+footer .attribution a{
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    color: var(--GrayishBlue);
+    margin: 0 0 0 5px;
+}
+
+
 
 @media (min-width: 768px){
         /* ANIMATION */
